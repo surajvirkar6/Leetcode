@@ -17,10 +17,16 @@ let sum = twoSum(nums, target);
 console.log("indices are", sum);
 
 function twoSum(nums, target) {
-  let leftindex = 0;
-  let rightIndex = nums.length - 1;
-  while (nums[leftindex] + nums[rightIndex] !== target) {
-    rightIndex -= 1;
+  const indices = {};
+  nums.forEach((element, index) => {
+    indices[element] = index;
+  });
+  // console.log(indices);
+  for (let index = 0; index < nums.length; index++) {
+    const complement = target - nums[index];
+    // console.log(complement);
+    if (indices[complement] !== undefined && indices[complement] !== index) {
+      return [index, indices[complement]];
+    }
   }
-  return [leftindex, rightIndex];
 }
