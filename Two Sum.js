@@ -19,6 +19,7 @@ console.log("indices are", sum);
 function twoSum(nums, target) {
   let leftindex = 0;
   let rightIndex = nums.length - 1;
+  nums.sort((a, b) => a - b);
   while (nums[leftindex] + nums[rightIndex] !== target) {
     rightIndex -= 1;
   }
