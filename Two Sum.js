@@ -11,8 +11,8 @@ Output:-
 [0,1]
 */
 
-let nums = [2, 7, 11, 15];
-let target = 9;
+let nums = [3, 2, 4];
+let target = 6;
 let sum = twoSum(nums, target);
 console.log("indices are", sum);
 
@@ -30,3 +30,9 @@ function twoSum(nums, target) {
     }
   }
 }
+
+/*
+
+OUTCOME:- Not Solved By Me. 
+
+*/
