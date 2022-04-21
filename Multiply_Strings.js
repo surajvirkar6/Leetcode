@@ -21,3 +21,5 @@ let num2 = '3';
 let ans = function multiply(num1, num2){
     return (BigInt(num1) * BigInt(num2)).toString();
 }
+
+// solved by me
